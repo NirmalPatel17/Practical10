@@ -22,6 +22,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val obj = intent.getSerializableExtra("Object") as Person
         Log.i(TAG, "onCreate: Object:$obj")
         lat = obj.Latitude
